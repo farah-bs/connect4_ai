@@ -75,7 +75,6 @@ public class GUI {
         // Placement des composants
         JPanel bottomPanel = new JPanel();
         bottomPanel.setLayout(new BoxLayout(bottomPanel, BoxLayout.Y_AXIS));
-        bottomPanel.add(columnButtons);
         bottomPanel.add(Box.createVerticalStrut(10));
         bottomPanel.add(controlPanel);
 
