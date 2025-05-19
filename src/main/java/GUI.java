@@ -13,7 +13,7 @@ public class GUI {
     }
 
     private static void createAndShowGUI() {
-        JFrame frame = new JFrame("🎮 Connect 4");
+        JFrame frame = new JFrame("Connect 4");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
 
@@ -45,7 +45,7 @@ public class GUI {
         JPanel controlPanel = new JPanel();
         controlPanel.setLayout(new FlowLayout(FlowLayout.CENTER, 20, 10));
 
-        JButton buttonUndo = new JButton("↩️ Annuler");
+        JButton buttonUndo = new JButton("↩️ Undo");
         buttonUndo.addActionListener(e -> {
             boolean success = state.undo();
             if (!success) {
@@ -57,7 +57,7 @@ public class GUI {
             board.repaint();
         });
 
-        JButton buttonRestart = new JButton("🔄 Recommencer");
+        JButton buttonRestart = new JButton("🔄 Restart");
         buttonRestart.addActionListener(e -> {
             int confirm = JOptionPane.showConfirmDialog(frame,
                     "Voulez-vous vraiment recommencer la partie ?",
